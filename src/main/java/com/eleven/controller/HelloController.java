@@ -10,6 +10,8 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 public class HelloController {
+
+
     @RequestMapping(value = { "/", "/welcome**" }, method = RequestMethod.GET)
     public ModelAndView welcomePage() {
 
@@ -18,6 +20,14 @@ public class HelloController {
         model.addObject("message", "This is welcome page!");
         model.setViewName("hello");
         return model;
-
     }
+    @RequestMapping(value = "/admin**",method = RequestMethod.GET)
+    public ModelAndView adminPage(){
+        ModelAndView model = new ModelAndView();
+        model.addObject("title", "Spring Security Hello World");
+        model.addObject("message", "This is protected page!");
+        model.setViewName("admin");
+        return model;
+    }
+
 }
