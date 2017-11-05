@@ -21,11 +21,21 @@ public class HelloController {
         model.setViewName("hello");
         return model;
     }
+
     @RequestMapping(value = "/admin**",method = RequestMethod.GET)
     public ModelAndView adminPage(){
         ModelAndView model = new ModelAndView();
         model.addObject("title", "Spring Security Hello World");
-        model.addObject("message", "This is protected page!");
+        model.addObject("message", "This is protected  admin page!");
+        model.setViewName("admin");
+        return model;
+    }
+
+    @RequestMapping(value = "/dba**", method = RequestMethod.GET)
+    public ModelAndView dbaPage() {
+        ModelAndView model = new ModelAndView();
+        model.addObject("title", "Spring Security Hello World");
+        model.addObject("message", "This is protected dba page - Database Page!");
         model.setViewName("admin");
         return model;
     }
