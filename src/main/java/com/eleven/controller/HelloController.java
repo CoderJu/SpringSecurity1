@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class HelloController {
 
 
-    @RequestMapping(value = { "/", "/welcome**" }, method = RequestMethod.GET)
+        @RequestMapping(value = { "/", "/welcome**" }, method = RequestMethod.GET)
     public ModelAndView welcomePage() {
 
         ModelAndView model = new ModelAndView();
