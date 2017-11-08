@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.eleven</groupId>
-  <artifactId>SpringSecurity1</artifactId>
+  <artifactId>SpringSecurity-xml</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>SpringSecurity1 Maven Webapp</name>
@@ -45,13 +45,6 @@
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>4.0.0</version>
-      <scope>provided</scope>
-    </dependency>
-
   </dependencies>
   <build>
     <finalName>SpringSecurity1</finalName>
