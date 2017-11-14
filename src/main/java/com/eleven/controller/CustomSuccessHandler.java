@@ -48,9 +48,12 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
         }
 
         if (isDba(roles)) {
-            url = "/dba";
+           // url = "/dba";
+            //测试标签
+            url = "/home";
         } else if (isAdmin(roles)) {
-            url = "/admin";
+            //url = "/admin";
+            url = "/home";
         } else if (isUser(roles)) {
             url = "/home";
         } else {
