@@ -6,28 +6,33 @@
 	http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
 	http://www.springframework.org/schema/security
 	http://www.springframework.org/schema/security/spring-security-4.2.xsd">
-
+    <http pattern="/static/**" security="none"/>
     <http auto-config="true">
-        <intercept-url pattern="/admin**" access="hasRole('ROLE_ADMIN')" />
+        <intercept-url pattern="/admin**" access="hasRole('ROLE_ADMIN')"  />
         <intercept-url pattern="/" access="hasRole('ROLE_USER')" />
+        <intercept-url pattern="/home" access="hasRole('ROLE_USER')"/>
+        <intercept-url pattern="/dba**" access="hasRole('ROLE_ADMIN') and  hasRole('ROLE_DBA')"/>
         <form-login
             login-page="/login"
-            default-target-url="/welcome"
-            authentication-failure-url="/login?error"
             username-parameter="username"
             password-parameter="password"
-            login-processing-url="/j_spring_security_check"/>
-        <logout logout-success-url="/login?logout"
-                logout-url="/j_spring_security_logout"/>
+            authentication-failure-forward-url="/login?error"
+            authentication-success-handler-ref="customSuccessHandler"
+            authentication-failure-url="/Access_Denied"/>
+        <logout logout-url="/login?logout"
+                invalidate-session="true"/>
         <csrf/>
     </http>
 
     <authentication-manager>
         <authentication-provider>
             <user-service>
-                <user name="sysadmin" password="123456" authorities="ROLE_ADMIN" />
+                <user name="sysadmin" password="123456" authorities="ROLE_ADMIN"/>
+                <user name="jyy" password="123456" authorities="ROLE_USER"/>
+                <user name="dba" password="123456" authorities="ROLE_DBA,ROLE_ADMIN"/>
             </user-service>
         </authentication-provider>
     </authentication-manager>
 
+    <beans:bean id="customSuccessHandler" class="com.eleven.controller.CustomSuccessHandler" />
 </beans:beans>
