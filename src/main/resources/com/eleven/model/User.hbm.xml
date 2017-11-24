@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+
+        "-//Hibernate/Hibernate Mapping DTD 5.0//EN"
+
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.eleven.model">
+    <class name="User" table="user">
+        <id name="id" type="java.lang.Integer" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="userName" type="java.lang.String" column="username"/>
+        <property name="passWord" type="java.lang.String" column="password"/>
+        <property name="firstName" type="java.lang.String" column="firstname"/>
+        <property name="lastName" type="java.lang.String" column="lastname"/>
+        <property name="email" type="java.lang.String" column="email"/>
+        <property name="state" type="java.lang.String"  column="state"/>
+    </class>
+
+</hibernate-mapping>

@@ -24,6 +24,7 @@ public class HelloController {
     @RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
     public String welcomePage(ModelMap model) {
         model.addAttribute("greeting", "Hi, Welcome to mysite");
+        model.addAttribute("user",getPrincipal());
         return "welcome";
     }
 
@@ -59,6 +60,12 @@ public class HelloController {
             new SecurityContextLogoutHandler().logout(request, response, auth);
         }
         return "redirect:/login?logout";
+    }
+
+    @RequestMapping(value = "/Access_Denied", method = RequestMethod.GET)
+    public String accessDeniedPage(ModelMap model) {
+        model.addAttribute("user", getPrincipal());
+        return "accessDenied";
     }
 
     /**

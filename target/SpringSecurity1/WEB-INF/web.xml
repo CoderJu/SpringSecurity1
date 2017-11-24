@@ -4,12 +4,8 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
           http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
-  <!--spring security DelegatingFilterProxy-->
 
-  <context-param>
-    <param-name>contextConfigLocation</param-name>
-    <param-value>classpath:config/spring-security.xml</param-value>
-  </context-param>
+
 
 
 
@@ -32,17 +28,29 @@
   </servlet-mapping>
 
 
- <listener>
+  <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
 
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>
+      classpath:config/spring-security.xml
+      classpath:config/spring-mvc.xml
+    </param-value>
+  </context-param>
+
   <filter>
-  <filter-name>springSecurityFilterChain</filter-name>
+    <filter-name>springSecurityFilterChain</filter-name>
     <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>springSecurityFilterChain</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+
+
+
+
 
 </web-app>
