@@ -37,12 +37,5 @@ public class UserToProfileid {
         this.id = id;
     }
 
-    @Override
-    public String toString() {
-        return "UserToProfileid{" +
-                "id=" + id +
-                ", userid=" + userid +
-                ", profileid=" + profileid +
-                '}';
-    }
+
 }

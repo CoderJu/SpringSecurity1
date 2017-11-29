@@ -9,38 +9,27 @@
     <http pattern="/static/**" security="none"/>
     <http auto-config="true"  use-expressions="true">
         <intercept-url pattern="/admin**" access="hasRole('ROLE_ADMIN')  "  />
-        <intercept-url pattern="/" access="hasRole('ROLE_USER') and hasRole('ROLE_ADMIN') and  hasRole('ROLE_DBA')" />
+        <intercept-url pattern="/" access="permitAll" />
         <intercept-url pattern="/home" access="permitAll"/>
         <intercept-url pattern="/dba**" access="hasRole('ROLE_ADMIN') and  hasRole('ROLE_DBA')"/>
         <form-login
             login-page="/login"
+            login-processing-url="/login"
             username-parameter="username"
             password-parameter="password"
-            authentication-failure-url="/Access_Denied"/>
-        <logout logout-url="/login?logout"
-                invalidate-session="true"/>
+            authentication-failure-url="/Access_Denied"
+            authentication-success-handler-ref="customSuccessHandler"
+        />
+        <logout logout-url="/login?logout"/>
         <csrf/>
     </http>
-
-    <!--<authentication-manager>
-       <authentication-provider>
-             <user-service>
-                 <user name="sysadmin" password="123456" authorities="ROLE_ADMIN"/>
-                 <user name="jyy" password="123456" authorities="ROLE_USER"/>
-                 <user name="dba" password="123456" authorities="ROLE_DBA,ROLE_ADMIN"/>
-             </user-service>
-      </authentication-provider>
-     <authentication-provider user-service-ref="customUserDetailsService">
-     </authentication-provider>
- </authentication-manager>-->
-
-
    <authentication-manager>
       <authentication-provider user-service-ref="customUserDetailsService"/>
    </authentication-manager>
 
-
     <beans:bean id="customUserDetailsService" class="com.eleven.security.CustomUserDetailsService">
+    </beans:bean>
+    <beans:bean id="customSuccessHandler" class="com.eleven.handler.CustomSuccessHandler">
     </beans:bean>
 
 </beans:beans>

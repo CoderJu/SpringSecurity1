@@ -35,12 +35,5 @@ public class Profileid {
         this.userToProfileidHashSet = userToProfileidHashSet;
     }
 
-    @Override
-    public String toString() {
-        return "Profileid{" +
-                "id=" + id +
-                ", type='" + type + '\'' +
-                ", userToProfileidHashSet=" + userToProfileidHashSet +
-                '}';
-    }
+
 }

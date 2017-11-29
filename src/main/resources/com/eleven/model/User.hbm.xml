@@ -15,6 +15,10 @@
         <property name="lastName" type="java.lang.String" column="lastname"/>
         <property name="email" type="java.lang.String" column="email"/>
         <property name="state" type="java.lang.String"  column="state"/>
+        <set name="userToProfileidHashSet" table="user_profile">
+            <key column="userid"></key>
+            <one-to-many class="UserToProfileid"/>
+        </set>
     </class>
 
 </hibernate-mapping>
