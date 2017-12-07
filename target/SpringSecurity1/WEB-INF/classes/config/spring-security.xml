@@ -22,12 +22,21 @@
         />
         <logout logout-url="/login?logout"/>
         <csrf/>
+        <remember-me
+                remember-me-parameter="remember-me"
+                remember-me-cookie="remember-me"
+                token-validity-seconds="86400"
+                data-source-ref="dataSource"
+                user-service-ref="customUserDetailsService"></remember-me>
     </http>
+
+
    <authentication-manager>
        <authentication-provider user-service-ref="customUserDetailsService">
            <password-encoder ref="bcryptEncoder"></password-encoder>
        </authentication-provider>
    </authentication-manager>
+
 
     <beans:bean id="customUserDetailsService" class="com.eleven.security.CustomUserDetailsService">
     </beans:bean>

@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="553d3e11-9689-4f6f-b679-b69aa925a5af" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/eleven/controller/RoleToUserProfileConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/eleven/dao/ProfileDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/eleven/dao/ProfileDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/eleven/service/ProfileService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/eleven/service/ProfileServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/sql/sql.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/register.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/registrerSuccess.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity1.war" afterPath="$PROJECT_DIR$/target/SpringSecurity1.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity1/WEB-INF/classes/com/eleven/controller/HelloController.class" afterPath="$PROJECT_DIR$/target/SpringSecurity1/WEB-INF/classes/com/eleven/controller/HelloController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/eleven/controller/HelloController.class" afterPath="$PROJECT_DIR$/target/classes/com/eleven/controller/HelloController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eleven/controller/HelloController.java" afterPath="$PROJECT_DIR$/src/main/java/com/eleven/controller/HelloController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eleven/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/eleven/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eleven/dao/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/eleven/dao/UserDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eleven/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/eleven/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eleven/security/CustomUserDetailsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/eleven/security/CustomUserDetailsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eleven/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/eleven/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eleven/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/eleven/service/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eleven/model/Profileid.hbm.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/eleven/model/Profileid.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eleven/model/User.hbm.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/eleven/model/User.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/eleven/model/UserToProfileid.hbm.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/eleven/model/UserToProfileid.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/spring-mvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/spring-mvc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/spring-security.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/spring-security.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity1/WEB-INF/classes/config/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/SpringSecurity1/WEB-INF/classes/config/spring-mvc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SpringSecurity1/WEB-INF/classes/config/spring-security.xml" afterPath="$PROJECT_DIR$/target/SpringSecurity1/WEB-INF/classes/config/spring-security.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/config/spring-mvc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config/spring-security.xml" afterPath="$PROJECT_DIR$/target/classes/config/spring-security.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,10 +21,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RoleToUserProfileConverter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RoleToUserProfileConverter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eleven/controller/RoleToUserProfileConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
+            <state relative-caret-position="713">
               <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -55,11 +33,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring-mvc.xml">
+      <file leaf-file-name="spring-security.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring-security.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="31" column="58" lean-forward="false" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+            <state relative-caret-position="246">
+              <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/page/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="46" column="30" lean-forward="false" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -68,8 +56,8 @@
       <file leaf-file-name="sql.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/sql/sql.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="483">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,7 +66,7 @@
       <file leaf-file-name="User.hbm.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/eleven/model/User.hbm.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="529">
               <caret line="23" column="58" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
               <folding />
             </state>
@@ -98,7 +86,7 @@
       <file leaf-file-name="registrerSuccess.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/page/registrerSuccess.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
+            <state relative-caret-position="506">
               <caret line="22" column="92" lean-forward="false" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="92" />
               <folding />
             </state>
@@ -115,20 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eleven/service/ProfileService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProfileDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eleven/dao/ProfileDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-115">
+            <state relative-caret-position="345">
               <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -190,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/hello.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/admin.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/logout.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/eleven/controller/CustomSuccessHandler.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/welcome.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -210,7 +187,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/eleven/model/Profileid.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eleven/handler/CustomSuccessHandler_bak.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eleven/handler/CustomSuccessHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/spring-security.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/eleven/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eleven/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eleven/service/ProfileServiceImp.java" />
@@ -232,6 +208,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/sql/sql.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/registrerSuccess.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/com/eleven/model/Profileid.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/spring-security.xml" />
       </list>
     </option>
   </component>
@@ -322,7 +300,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -628,6 +605,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -638,7 +616,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.39732143" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringSecurityannotation/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -1247,7 +1225,8 @@
       <workItem from="1511963243961" duration="2796000" />
       <workItem from="1512196158739" duration="12751000" />
       <workItem from="1512612577537" duration="7340000" />
-      <workItem from="1512629938388" duration="3071000" />
+      <workItem from="1512629938388" duration="3787000" />
+      <workItem from="1512636484017" duration="1005000" />
     </task>
     <task id="LOCAL-00001" summary="通过配置的方式自动做权限校验">
       <created>1509633382469</created>
@@ -1319,7 +1298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511966019345</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Spring Security+Hibernate密码编码器Bcrypt实例 xml配置实现">
+      <created>1512633019999</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1512633019999</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1334,10 +1320,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98446000" />
+    <option name="totallyTimeSpent" value="100167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1358,11 +1345,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23085585" sideWeight="0.4957265" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23085585" sideWeight="0.4957265" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17948718" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18162394" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -1417,7 +1404,8 @@
     <MESSAGE value="Spring Security与Hibernate XML实例 完全通过配置的方式" />
     <MESSAGE value="Spring Secrity与Hibernate基于角色登录实例完全通过配置的方式" />
     <MESSAGE value="Spring Security+Hibernate密码编码器Bcrypt实例 xml配置实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Security+Hibernate密码编码器Bcrypt实例 xml配置实现" />
+    <MESSAGE value="Spring Security+Hibernate记住我实例 xml配置实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Security+Hibernate记住我实例 xml配置实现" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1531,7 +1519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1574,10 +1561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="e#458#459#0" expanded="false" />
-            <element signature="e#492#493#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1603,10 +1586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-          <folding>
-            <element signature="e#413#414#0" expanded="false" />
-            <element signature="e#445#446#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1614,14 +1593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="814">
           <caret line="57" column="11" lean-forward="false" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/page/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1637,7 +1608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1656,19 +1626,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring-security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eleven/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1693,11 +1654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1715,7 +1671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="37" column="40" lean-forward="false" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1736,7 +1691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1768,7 +1722,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring-mvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="713">
           <caret line="31" column="58" lean-forward="false" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
           <folding />
         </state>
@@ -1776,15 +1730,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/sql/sql.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="483">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/page/registrerSuccess.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
+        <state relative-caret-position="506">
           <caret line="22" column="92" lean-forward="false" selection-start-line="22" selection-start-column="86" selection-end-line="22" selection-end-column="92" />
           <folding />
         </state>
@@ -1800,7 +1754,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/eleven/model/User.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="529">
           <caret line="23" column="58" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
           <folding />
         </state>
@@ -1824,7 +1778,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eleven/dao/ProfileDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
+        <state relative-caret-position="345">
           <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1834,11 +1788,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eleven/controller/RoleToUserProfileConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
+        <state relative-caret-position="713">
           <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/page/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="46" column="30" lean-forward="false" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/spring-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
