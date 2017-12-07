@@ -15,7 +15,9 @@ public class User {
     private String email;
     private String state = State.ACTIVE.getState();
 
-    private Set<UserToProfileid> userToProfileidHashSet=new HashSet<UserToProfileid>(); //集合的类型为中间的实体类类型
+   // private Set<UserToProfileid> userToProfileidHashSet=new HashSet<UserToProfileid>(); //集合的类型为中间的实体类类型
+
+    private Set<Profileid> profileids=new HashSet<Profileid>(); //集合的类型为中间的实体类类型
 
     public Integer getId() {
         return id;
@@ -72,13 +74,21 @@ public class User {
     public void setState(String state) {
         this.state = state;
     }
-
+/*
     public Set<UserToProfileid> getUserToProfileidHashSet() {
         return userToProfileidHashSet;
     }
 
     public void setUserToProfileidHashSet(Set<UserToProfileid> userToProfileidHashSet) {
         this.userToProfileidHashSet = userToProfileidHashSet;
+    }*/
+
+    public Set<Profileid> getProfileids() {
+        return profileids;
+    }
+
+    public void setProfileids(Set<Profileid> profileids) {
+        this.profileids = profileids;
     }
 
     @Override

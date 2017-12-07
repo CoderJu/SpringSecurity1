@@ -1,11 +1,19 @@
 package com.eleven.controller;
 
+import com.eleven.model.Profileid;
+import com.eleven.model.User;
+import com.eleven.service.ProfileService;
+import com.eleven.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,6 +21,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * Created by User on 2017/11/2.
@@ -20,6 +29,12 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class HelloController {
 
+
+    @Autowired
+    private UserService userService;
+
+    @Autowired
+    private ProfileService profileService;
 
     @RequestMapping(value = { "/", "/home" }, method = RequestMethod.GET)
     public String welcomePage(ModelMap model) {
@@ -68,6 +83,30 @@ public class HelloController {
         return "accessDenied";
     }
 
+    @RequestMapping(value = "/registerPage", method = RequestMethod.GET)
+    public String registerPage(ModelMap model) {
+        User user = new User();
+        model.addAttribute("user", user);
+        return "register";
+    }
+
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    public String register(ModelMap model, @Validated User user, BindingResult result) {
+       if (result.hasErrors()){
+           System.out.println("There are errors");
+           return "register";
+       }
+        userService.save(user);
+        model.addAttribute("success", "User "
+                + user.getFirstName() + " has been registered successfully");
+        return "registrerSuccess";
+    }
+
+    @ModelAttribute("roles")
+    public List<Profileid> initProfile(){
+            return  profileService.findAll();
+    }
+
     /**
      *  通过Authentication.getPrincipal()可以获取到代表当前用户的信息，
      *  这个对象通常是UserDetails的实例。获取当前用户的用户名是一种比较常见的需求，
@@ -88,4 +127,5 @@ public class HelloController {
         }
         return userName;
     }
+
 }

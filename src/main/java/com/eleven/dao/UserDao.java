@@ -11,4 +11,6 @@ public interface UserDao {
     User findById(Integer id);
 
     User findByUserName(String username);
+
+    void save(User user);
 }

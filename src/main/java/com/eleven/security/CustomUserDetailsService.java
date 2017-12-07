@@ -1,6 +1,7 @@
 package com.eleven.security;
 
 
+import com.eleven.model.Profileid;
 import com.eleven.model.User;
 import com.eleven.model.UserToProfileid;
 import com.eleven.service.UserService;
@@ -44,9 +45,14 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     private List<GrantedAuthority> getGrantedAuthorities(User user){
         List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
-        for(UserToProfileid userToProfileid : user.getUserToProfileidHashSet()){
+        /*for(UserToProfileid userToProfileid : user.getUserToProfileidHashSet()){
             System.out.println("userToProfileid : "+userToProfileid);
             authorities.add(new SimpleGrantedAuthority("ROLE_"+userToProfileid.getProfileid().getType()));
+        }*/
+
+        for(Profileid userToProfileid : user.getProfileids()){
+            System.out.println("userToProfileid : "+userToProfileid);
+            authorities.add(new SimpleGrantedAuthority("ROLE_"+userToProfileid.getType()));
         }
         System.out.print("authorities :"+authorities);
         return authorities;

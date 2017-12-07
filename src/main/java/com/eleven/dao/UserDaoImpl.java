@@ -5,6 +5,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -12,6 +13,7 @@ import java.util.List;
  * Created by User on 2017/11/21.
  */
 @Repository("userDao")
+@Transactional
 public class UserDaoImpl implements UserDao {
 
     @Autowired
@@ -44,6 +46,11 @@ public class UserDaoImpl implements UserDao {
             return users.get(0);
         }
         return null;
+    }
+
+    public void save(User user) {
+
+        sessionFactory.getCurrentSession().save(user);
     }
 
 }

@@ -24,12 +24,15 @@
         <csrf/>
     </http>
    <authentication-manager>
-      <authentication-provider user-service-ref="customUserDetailsService"/>
+       <authentication-provider user-service-ref="customUserDetailsService">
+           <password-encoder ref="bcryptEncoder"></password-encoder>
+       </authentication-provider>
    </authentication-manager>
 
     <beans:bean id="customUserDetailsService" class="com.eleven.security.CustomUserDetailsService">
     </beans:bean>
     <beans:bean id="customSuccessHandler" class="com.eleven.handler.CustomSuccessHandler">
     </beans:bean>
+    <beans:bean id="bcryptEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
 
 </beans:beans>

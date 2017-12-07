@@ -4,8 +4,8 @@
         "-//Hibernate/Hibernate Mapping DTD 5.0//EN"
 
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<hibernate-mapping package="com.eleven.model">
-    <class name="User" table="user">
+<hibernate-mapping package="com.eleven.model" >
+    <class name="User" table="user" lazy="true">
         <id name="id" type="java.lang.Integer" column="id">
             <generator class="native"/>
         </id>
@@ -15,9 +15,13 @@
         <property name="lastName" type="java.lang.String" column="lastname"/>
         <property name="email" type="java.lang.String" column="email"/>
         <property name="state" type="java.lang.String"  column="state"/>
-        <set name="userToProfileidHashSet" table="user_profile">
+       <!-- <set name="userToProfileidHashSet" table="user_profile"  fetch="join" inverse="true" cascade="all">
             <key column="userid"></key>
             <one-to-many class="UserToProfileid"/>
+        </set>-->
+        <set name="profileids" table="user_profile"  >
+            <key column="userid"></key>
+            <many-to-many class="Profileid" column="user_profileid"/>
         </set>
     </class>
 

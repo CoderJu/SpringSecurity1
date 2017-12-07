@@ -62,4 +62,14 @@
         </property>
     </bean>
     <mvc:resources mapping="/static/**" location="/static/"></mvc:resources>
+
+    <mvc:annotation-driven conversion-service="formattingConversionService"></mvc:annotation-driven>
+    <bean id="formattingConversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+            <property name="converters">
+                <set>
+                    <bean class="com.eleven.controller.RoleToUserProfileConverter"></bean>
+                </set>
+            </property>
+    </bean>
+
 </beans>

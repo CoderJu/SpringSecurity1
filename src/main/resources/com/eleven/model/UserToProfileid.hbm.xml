@@ -6,11 +6,11 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.eleven.model">
     <class name="UserToProfileid" table="USER_PROFILE">
-        <id name="id"  type="java.lang.Integer" column="id">
+       <id name="id"  type="java.lang.Integer" column="id">
             <generator class="native"/>
         </id>
-        <many-to-one name="profileid" class="Profileid" column="user_profileid"/>
-        <many-to-one name="userid" class="User" column="userid"/>
+        <many-to-one name="profileid" class="Profileid" column="user_profileid" />
+        <many-to-one name="userid" class="User" column="userid" />
     </class>
 
 </hibernate-mapping>

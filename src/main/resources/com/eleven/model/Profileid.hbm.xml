@@ -10,10 +10,6 @@
             <generator class="native"/>
         </id>
         <property name="type" type="java.lang.String" column="type"/>
-        <set name="userToProfileidHashSet" table="user_profile">
-            <key column="user_profileid"></key>
-            <one-to-many class="UserToProfileid"/>
-        </set>
     </class>
 
 </hibernate-mapping>
