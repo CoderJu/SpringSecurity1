@@ -15,7 +15,7 @@
     <title>Welcome page</title>
 </head>
 <body>
-Greeting : ${greeting}
+Greeting : ${user}
 This is a welcome page.
 <a href="<c:url value="/logout" />">Logout</a>
 <br/>

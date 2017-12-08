@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * Created by User on 2017/11/21.
@@ -37,5 +38,22 @@ public class UserServiceImpl implements UserService {
     public void save(User user) {
         user.setPassWord(passwordEncoder.encode(user.getPassWord()));
         userDao.save(user);
+    }
+
+    public List<User> findAll() {
+        return userDao.findAll();
+    }
+
+
+    public void update(User user) {
+        User exitUser = userDao.findById(user.getId());
+        exitUser.setUserName(user.getUserName());
+        exitUser.setLastName(user.getLastName());
+        exitUser.setFirstName(user.getFirstName());
+        userDao.update(exitUser);
+    }
+
+    public void delete(User user) {
+        userDao.delete(user);
     }
 }

@@ -13,10 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -106,6 +103,42 @@ public class HelloController {
     public List<Profileid> initProfile(){
             return  profileService.findAll();
     }
+
+
+
+
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
+    public String list(ModelMap model) {
+        List<User> users = userService.findAll();
+        model.addAttribute("users", users);
+        return "list";
+    }
+
+    @RequestMapping(value = {"/edit-user-{id}"}, method = RequestMethod.GET)
+    public String registerPage(@PathVariable int id, ModelMap model) {
+        User users = userService.findById(id);
+        model.addAttribute("user", users);
+        model.addAttribute("edit", true);
+        return "edit";
+    }
+
+
+    @RequestMapping(value = {"/edit-user-{id}"}, method = RequestMethod.POST)
+    public String register(@PathVariable int id, ModelMap model,User user) {
+        userService.update(user);
+        model.addAttribute("success", "User" + user.getLastName() + " update Success !!!");
+        return "success";
+    }
+
+    @RequestMapping(value = {"/delete-user-{id}"}, method = RequestMethod.GET)
+    public String delete(@PathVariable int id, ModelMap model) {
+        User user = userService.findById(id);
+        userService.delete(user);
+        model.addAttribute("success", "User" + user.getLastName() + " Delete Success !!!");
+        return "success";
+    }
+
+
 
     /**
      *  通过Authentication.getPrincipal()可以获取到代表当前用户的信息，

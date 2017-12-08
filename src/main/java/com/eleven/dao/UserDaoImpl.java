@@ -53,4 +53,18 @@ public class UserDaoImpl implements UserDao {
         sessionFactory.getCurrentSession().save(user);
     }
 
+    public List<User> findAll() {
+        String hql = "from User ";
+        Query query =  sessionFactory.getCurrentSession().createQuery(hql);
+        return query.list();
+    }
+
+    public void update(User exitUser) {
+        sessionFactory.getCurrentSession().save(exitUser);
+    }
+
+    public void delete(User user) {
+        sessionFactory.getCurrentSession().delete(user);
+    }
+
 }
